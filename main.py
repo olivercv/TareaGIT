@@ -4,6 +4,8 @@ from models.mean import MeanStrategy
 from models.median import MedianStrategy
 from models.lianeal_regresion import LinearRegressionStrategy
 
+# Genera el menú para seleccionar la estrategia de análisis de datos y ejecutar el programa principal
+
 def mostrar_menu():
     print("\n=== MENÚ DE ESTRATEGIAS DE ANÁLISIS ===")
     print("1. Media (MeanStrategy)")
@@ -13,6 +15,7 @@ def mostrar_menu():
     return input("Seleccione una estrategia: ")
 
 def main():
+    #Data de prueba para analizar
     data = [10, 20, 30, 40, 50]
     analyzer = DataAnalyzer(MeanStrategy())
     
